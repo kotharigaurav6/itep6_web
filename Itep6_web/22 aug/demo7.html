@@ -1,0 +1,128 @@
+<!-- 
+    Form Tag
+    ---------
+<form> <input> <label> <select>
+<option> <button> <fieldset> <legend>                        
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <legend>    
+            <fieldset>
+                <font face="candara">Registration Form</font>
+            </fieldset>
+        </legend>
+    <form action="welcome.html">
+    <table>
+        <tr>
+            <td>
+                <label>Username</label>
+            </td>
+            <td>
+                <input required type="text" placeholder="Enter Username" name="username" id="username">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Email</label>
+            </td>
+            <td>
+                <input readonly value="abc@gmail.com" required type="email" placeholder="Enter Email" name="email" id="email">
+            </td>
+        </tr>
+        <tr>
+            <td><label>
+                Password
+            </label></td>
+            <td>
+                <input required type="password" placeholder="Enter Password" name="password" id="password">
+            </td>
+        </tr>
+        <tr>
+            <td><label>
+                Contact
+            </label></td>
+            <td>
+                <input required type="text" maxlength="10" placeholder="Enter 10-digit Mobile Number" name="contact" id="contact">
+            </td>
+        </tr>
+        <tr>
+            <td><label>
+                DOB
+            </label></td>
+            <td>
+                <input required type="date" name="date" id="date">
+            </td>
+        </tr>
+        <tr>
+            <td><label>
+                Gender
+            </label></td>
+            <td>
+                <input required checked type="radio" id="male" name="gender">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender">
+                <label for="female">Female</label>
+            </td>
+        </tr>
+        <tr>
+            <td><label>
+                Hobbies
+            </label></td>
+            <td>
+                <input checked type="checkbox" id="cricket" name="cricket">
+                <label for="cricket">Cricket</label>
+                <input type="checkbox" id="hockey" name="hockey">
+                <label for="hockey">Hockey</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>
+                    Subject
+                </label>
+            </td>
+            <td>
+                <select required name="subject" id="subject">
+                    <!-- <select name="subject" id="subject" multiple> -->
+                    <option value="">Select Subject</option>
+                    <option value="C Language">C Language</option>                    
+                    <option selected value="C++ Language">C++ Language</option>                    
+                    <option value="C# Language">C# Language</option>                    
+                    <option value=".Net Language">.Net Language</option>                    
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label>
+                Address
+            </label></td>
+            <td>
+                <textarea required name="address" id="address" cols="21" rows="3" placeholder="Enter Address"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" value="Register">
+                <input type="reset" value="Reset">
+            </td>
+        </tr>
+    </table>    
+    </form>
+</fieldset>
+</body>
+</html>
+
+
+
+
+
+
