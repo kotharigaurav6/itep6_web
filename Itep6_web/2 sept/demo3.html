@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li:nth-of-type(even){
+            color:red;
+        }
+        li:nth-of-type(odd){
+            color:blue;
+        }
+        li:nth-last-of-type(even)::marker{
+            color: pink;
+        }
+        li::first-letter{
+            font-size: 30px;
+        }
+        ul::first-line{
+            color:orange;
+        }
+        h1:hover{
+            color:red;
+        }
+        input::placeholder{
+            color:red;
+        }
+</style>
+</head>
+<body>
+    <input type="text" placeholder="Enter Text"> <br>
+    <h1>Un-Ordered List</h1>
+    <ul>
+        <li>Item1</li>
+        <li>Item2</li>
+        <li>Item3</li>
+        <li>Item4</li>
+        <li>Item5</li>
+        <li>Item6</li>
+        <li>Item7</li>
+        <li>Item8</li>
+        <li>Item9</li>
+    </ul>
+
+</body>
+</html>

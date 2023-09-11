@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* adjacent sibling selector */
+        div + span{
+            background-color: crimson;
+            color:white;
+        }
+
+        /* direct child selector */
+        div > span{
+            background-color: darkgreen;
+            color:white;
+        }
+
+        /* general sibling selector */
+        div~span{
+            background-color: orange;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat sint placeat consequuntur harum debitis tempore corporis id tenetur laudantium non.</span>
+
+    <div>
+        <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat sint placeat consequuntur harum debitis tempore corporis id tenetur laudantium non.</span>
+
+        <p>
+            <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat sint placeat consequuntur harum debitis tempore corporis id tenetur laudantium non.</span>
+        </p>
+        <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat sint placeat consequuntur harum debitis tempore corporis id tenetur laudantium non.</span>
+    </div> 
+    <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat sint placeat consequuntur harum debitis tempore corporis id tenetur laudantium non.</span>
+
+    <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat sint placeat consequuntur harum debitis tempore corporis id tenetur laudantium non.</span>
+    <p>
+        <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat sint placeat consequuntur harum debitis tempore corporis id tenetur laudantium non.</span>
+    </p>
+    <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat sint placeat consequuntur harum debitis tempore corporis id tenetur laudantium non.</span>
+
+</body>
+</html>
