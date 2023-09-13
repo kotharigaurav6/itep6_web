@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height:100px;
+            width:100px;
+            background-color: red;
+            animation-name: animate;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            position: relative;
+            /* animation-direction: reverse; */
+            animation-direction: alternate-reverse;
+
+            animation-timing-function: ease-in-out;
+        }
+        @keyframes animate {
+             0%{background-color: blue;
+                top:0px;
+                left:0px;
+            }
+             25%{background-color: yellow;
+                height:120px;
+                width:120px;
+                top:0px;
+                left:400px;
+            }  
+             /* 50%{background-color: brown;
+                height:160px;
+                width:160px;
+                border-radius: 50%;
+                top:400px;
+                left:400px;
+            }   */
+             75%{background-color: purple;
+                height:120px;
+                width:120px;
+                top:400px;
+                left:0px;
+            }  
+             100%{background-color: orange;
+                top:0px;
+                left:0px;
+            }   
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
