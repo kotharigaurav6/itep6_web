@@ -1,0 +1,16 @@
+<script>
+    var num = 123;
+    document.write("Original Number : "+num);
+
+    var last = num%10;
+//    document.write("<br>last : "+last);
+
+    var middle = parseInt(num/10)%10;
+//   document.write("<br>middle : "+middle);
+
+    var first = parseInt(num/100);
+//    document.write("<br>first : "+first);
+
+    var rev = last*100+middle*10+first*1;
+    document.write("<br>Reverse Number : "+rev);
+</script>
