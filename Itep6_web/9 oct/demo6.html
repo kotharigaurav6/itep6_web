@@ -1,0 +1,12 @@
+<script>
+    // with argument with return type    
+    function factorial(num){
+        var fact=1;
+        for(i=1;i<=num;i++){
+            fact=fact*i;
+        }
+        return fact;
+    }
+    var num = parseInt(prompt("Enter number : "));
+    document.write("Factorial : "+factorial(num));
+</script>
