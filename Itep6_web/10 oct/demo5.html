@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function show(){
+            var passwordElement = document.getElementById("password");
+            if(passwordElement.type=="password")
+                passwordElement.type="text";
+            else
+                passwordElement.type="password";
+        }
+    </script>
+</head>
+
+<body>
+        <input type="password" id="password" placeholder="Enter Password">
+        <input type="checkbox" onclick="show()">Show Password
+</body>
+</html>

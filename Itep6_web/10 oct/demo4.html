@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function changeColor(color){
+            var bodyElement = document.getElementById("display");
+            bodyElement.style.backgroundColor = color;
+        }
+    </script>
+</head>
+
+<body id="display">
+    <button  onclick="changeColor('tomato')">Tomato</button>    
+    <button  onclick="changeColor('dodgerblue')">DodgerBlue</button>    
+    <button  onclick="changeColor('goldenrod')">Goldenrod</button>    
+</body>
+</html>
