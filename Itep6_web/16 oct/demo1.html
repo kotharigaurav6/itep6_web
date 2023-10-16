@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input,button{
+            margin: 2px;
+        }
+    </style>
+    <script>
+        function myfun(operator){
+            // alert(operator);
+            var first = parseInt(document.getElementById("first").value);
+            var second = parseInt(document.getElementById("second").value);
+            var res = document.getElementById("res");
+            var add = document.getElementById("add");
+            var sub = document.getElementById("sub");
+            var showResult = document.getElementById("showResult");
+           
+            switch(operator){
+                case '+' : {
+                    var r = first+second;
+                    res.value = r;
+                    add.innerHTML = r;
+                    showResult.innerHTML = "Result : "+r;
+                    break;
+                }
+                case '-' : {
+                    var r = first-second;
+                    res.value = r;
+                    sub.innerHTML = r;
+                    showResult.innerHTML = "Result : "+r;
+                    break;
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Getting values from fields</h2>
+    <input type="text" placeholder="Enter first number" id="first"> <br>
+    <input type="text" placeholder="Enter second number" id="second"> <br>
+    <input readonly type="text" placeholder="Result" id="res"> <br>
+    <button id="add" onclick="myfun('+')" >+</button> 
+    <button id="sub" onclick="myfun('-')" >-</button> 
+    <button onclick="myfun('x')" >x</button> 
+    <button onclick="myfun('/')" >/</button> <br> 
+    <span id="showResult" style="color:red">Result will show Here</span>
+</body>
+</html>
