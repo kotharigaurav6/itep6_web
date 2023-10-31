@@ -1,0 +1,25 @@
+<script>
+    function Employer(){
+        this.setDetails = function(eid,empname,salary){
+            this.empId = eid;
+            this.empName = empname;
+            this.salary = salary;
+        }
+
+        this.showDetails = function(){
+            document.write("<br>Employer Id : "+this.empId);
+            document.write("<br>Employer Name : "+this.empName);
+            document.write("<br>Employer Salary : "+this.salary);
+            document.write("<br>Employer Address : "+this.address);
+        }    
+    }
+    Employer.prototype.address = "Indore, Madhya Pradesh";
+    Employer.prototype.title = function(){
+        document.write("--Student Details--<br>");
+    }
+    var obj = new Employer();
+    obj.title();
+    obj.setDetails(101,"Andrew Anderson",12000);
+    obj.showDetails();
+
+</script>

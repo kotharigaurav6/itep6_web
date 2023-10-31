@@ -1,0 +1,33 @@
+<script>
+    var arr = [11,22,33,44,55,66];
+    document.write("Array elements : "+arr+"<br>");
+
+    var res1 = arr.map((element)=>{
+       if(element%2==0)
+            return element;
+    });
+    document.write("<br> map : "+res1);
+
+    document.write("<br>");
+    var res2 = arr.filter((element)=>{
+        if(element%2==0)
+            return element;
+    });
+    document.write("<br> filter : "+res2);
+    
+    document.write("<br>");
+    var res3 = arr.find((element)=>{
+        if(element%2==0)
+            return element;
+    });
+    document.write("<br> find : "+res3);
+    
+    document.write("<br>");
+    var res4 = arr.reduce((x,element)=>{
+        document.write("<br>x : "+x+"&nbsp;&nbsp;element : "+element);
+            return x+element;
+    });
+    document.write("<br> reduce : "+res4);
+    
+    
+</script>

@@ -1,0 +1,21 @@
+<script>
+    function Employer(){
+        this.empId = 101;
+        this.empName = "Andrew Anderson";
+        this.salary = 34000;
+
+        this.showDetails = function(){
+            document.write("<br>Employer Id : "+this.empId);
+            document.write("<br>Employer Name : "+this.empName);
+            document.write("<br>Employer Salary : "+this.salary);
+            document.write("<br>Employer Address : "+this.address);
+        }    
+    }
+    Employer.prototype.address = "Indore, Madhya Pradesh";
+    Employer.prototype.title = function(){
+        document.write("--Student Details--<br>");
+    }
+    var obj = new Employer();
+    obj.title();
+    obj.showDetails();
+</script>
