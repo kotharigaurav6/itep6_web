@@ -1,0 +1,73 @@
+<script>
+    var arr = [32,22,3,44,55,6];
+    document.write("Array elements : "+arr+"<br>");
+
+    arr.push(100);
+    document.write("Array elements(push) : "+arr+"<br>");
+
+    arr.push(200,300);
+    document.write("Array elements(push) : "+arr+"<br>");
+
+    arr.pop();
+    document.write("Array elements(pop) : "+arr+"<br>");
+
+    arr.shift();
+    document.write("Array elements(shift) : "+arr+"<br>");
+
+    arr.unshift(400);
+    document.write("Array elements(shift) : "+arr+"<br>");
+
+    arr.sort();
+    document.write("Array elements(sort) : "+arr+"<br>");
+
+    arr.sort(function(a,b){
+        return a-b;
+    });
+    document.write("Array elements(sort) : "+arr+"<br>");
+
+    arr.sort(function(a,b){
+        return b-a;
+    });
+    document.write("Array elements(sort) : "+arr+"<br>");
+
+    document.write("Array elements(max) : "+Math.max(...arr)+"<br>");
+    document.write("Array elements(min) : "+Math.min(...arr)+"<br>");
+
+    var string_array = ["Andrew","Anderson","Andrew","Mathew","Andrew","Mark"];      
+    document.write("Array elements : "+string_array+"<br>");
+    document.write("Array elements : "+string_array.indexOf("Anderson")+"<br>");
+    document.write("Array elements : "+string_array.lastIndexOf("Andrew")+"<br>");
+    document.write("Array elements : "+string_array.lastIndexOf("Andrew")+"<br>");
+
+    // if(string_array.indexOf("Andrew")-string_array.lastIndexOf("Andrew"))
+    //     alert("occurs more than one");
+    // else
+    //     alert("only single copy"); 
+
+    document.write("Array elements : "+string_array.slice(1,4)+"<br>");
+    document.write("Array elements : "+string_array.slice(1,-1)+"<br>");
+    
+    var string_array = "Hello Andrew Anderson";
+    document.write("Array elements : "+string_array.substring(2,4)+"<br>");
+
+    document.write("Array elements : "+arr+"<br>");
+    //document.write("Array elements : "+arr.splice(1,3)+"<br>");
+    arr.splice(1,0,1000);
+//    arr.splice(1,0,1000);
+    document.write("Array elements : "+arr+"<br>");
+
+    document.write("Array elements : "+arr.join("--")+"<br>");
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
