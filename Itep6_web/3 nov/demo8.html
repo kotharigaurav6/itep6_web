@@ -1,0 +1,32 @@
+<script>
+    var obj1 = {
+        name : "Andrew Anderson",
+        age : 45
+    };
+    var obj2 = {
+        salary : 20000,
+        age : 35
+    };
+    var obj3 = {
+        name : "Jonny John",
+        salary : 20000,
+    };
+
+    var arr = [obj1,obj2,obj3];
+/*
+    for(i=0;i<arr.length;i++){
+        document.write("<br><br>Name : "+arr[i].name);
+        document.write("<br>Age : "+arr[i].salary);
+        document.write("<br>Salary : "+arr[i].age);
+    }
+*/
+
+for(var obj in arr){
+    for(var key in arr[obj]){
+        document.write("<br>"+key+" : "+arr[obj][key]);
+    }
+    document.write("<br>");
+}
+</script>
+
+

@@ -1,0 +1,32 @@
+<script>
+    /*
+    var obj = {
+        name : "Andrew Anderson",
+        age : 45
+    };
+    document.write("<br>Name : "+obj.name);
+    document.write("<br>Age : "+obj.age);
+    */
+
+    var obj = {
+        "full name" : "Andrew Anderson",
+        age : 45
+    };
+    obj.salary = 300;
+    
+    document.write("<br>Name : "+obj["full name"]);
+    document.write("<br>Age : "+obj.age);
+    document.write("<br>Salary : &#8377; "+obj.salary);
+
+    // delete obj.salary;
+    // document.write("<br>Salary : &#8377; "+obj.salary);
+
+
+    for (const key in obj) {
+        document.write("<br>");
+        document.write(key+" : "+typeof key);
+    }
+
+</script>
+
+

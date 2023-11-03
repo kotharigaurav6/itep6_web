@@ -1,0 +1,31 @@
+<script>
+    var obj1 = {
+        name : "Andrew Anderson",
+        salary : 10000,
+        age : 45
+    };
+    var obj2 = {
+        name : "Jackson Jack",
+        salary : 20000,
+        age : 35
+    };
+    var obj3 = {
+        name : "Jonny John",
+        salary : 20000,
+        age : 35
+    };
+
+    var arr = [obj1,obj2,obj3];
+    var table = "<table border='1' cellspacing='0' cellpadding='8'><tr><th>Name</th><th>Salary</th><th>Age</th></tr>";
+    for(i=0;i<arr.length;i++){
+        table+=`<tr>
+            <td>${arr[i].name}</td>
+            <td>${arr[i].salary}</td>
+            <td>${arr[i].age}</td>
+        </tr>`;
+    }
+    table+="</table>";
+    document.write(table);
+</script>
+
+

@@ -1,0 +1,59 @@
+<script>
+    var arr = [];
+    var count=0;
+    var num = prompt("Enter number of matrix ");
+    var r = prompt("Enter rows ");
+    var c = prompt("Enter columns ");
+    
+    for(var i=0;i<num;i++){
+        arr[i] = [];
+        for(var j=0;j<r;j++){
+           arr[i][j] = [];
+            for(var k=0;k<c;k++){
+                arr[i][j][k] = ++count;
+            }     
+        } 
+    }
+
+    arr.forEach(array=>{
+        array.forEach(row=>{
+            row.forEach(element=>{
+                document.write(element+"&nbsp;&nbsp;");
+            })
+            document.write("<br>");
+        });
+        document.write("<br>");
+    });
+</script>
+
+<!-- int arr[];
+int arr[][];
+
+int arr[][][] = new int[no. of 2d matrix][no. of rows][no. of columns];
+int arr[][][] = new int[2][3][3];
+        ________________|_____
+       |                     |
+   11   22  33          88  8   77  
+   55   44  33          6   45  3
+   77   66  53          43  34  56
+            3x3                 3x3
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
