@@ -1,0 +1,24 @@
+<script>
+    var jsonobj = {
+        "name":"Andrew Anderson",
+        "age":56,
+        "address":"Indore Madhya Pradesh"
+    }
+    document.write("typeof jsonobj : "+typeof jsonobj);
+    document.write("<br>Name : "+jsonobj.name);
+    document.write("<br>Age : "+jsonobj.age);
+    document.write("<br>Address : "+jsonobj.address);
+
+    var jsonstring = `{
+        "name":"Andrew Anderson",
+        "age":56,
+        "address":"Indore Madhya Pradesh"
+    }`
+    document.write("<br><br>typeof jsonstring : "+typeof jsonstring);
+    var obj = JSON.parse(jsonstring);
+    console.log(obj);
+    document.write("<br>Name : "+obj.name);
+ 
+    document.write("<br>typeof jsonobj : "+typeof JSON.stringify(jsonobj));
+
+</script>

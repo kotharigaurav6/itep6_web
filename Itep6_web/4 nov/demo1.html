@@ -1,0 +1,62 @@
+<script>
+    var obj1 = {
+        name : "Andrew Anderson",
+        salary : 10000,
+        age : 45,
+        address : {
+            state: "Madhya Pradesh",
+            city:"Indore"
+        }
+    };
+    var obj2 = {
+        name : "Jackson Jack",
+        salary : 20000,
+        age : 35,
+        address : {
+            state:"Madhya Pradesh",
+            city:"Indore"
+        }
+    };
+    var obj3 = {
+        name : "Jonny John",
+        salary : 20000,
+        age : 35,
+        address : {
+            state:"Madhya Pradesh",
+            city:"Indore"
+        }
+    };
+
+    var arr = [obj1,obj2,obj3];
+    var table = "<table border='1' cellspacing='0' cellpadding='8'><tr><th>Name</th><th>Salary</th><th>Age</th><th>City</th><th>State</th></tr>";
+    // for(i=0;i<arr.length;i++){
+    //     table+=`<tr>
+    //         <td>${arr[i].name}</td>
+    //         <td>${arr[i].salary}</td>
+    //         <td>${arr[i].age}</td>
+    //         <td>${arr[i].address.city}</td>
+    //         <td>${arr[i].address.state}</td>
+    //    </tr>`;
+    // }
+
+        for(var index in arr){
+            table+="<tr>";
+            for(var key in arr[index]){
+                if(typeof arr[index][key]=="object"){
+                    for(var subkey in arr[index][key]){
+                       if(typeof arr[index][key][subkey]=="object"){}
+                       else
+                            table+=`<td>${arr[index][key][subkey]}</td>`;
+                    }
+                }
+                else
+                    table+=`<td>${arr[index][key]}</td>`;
+            }
+            table+="</tr>";
+        }
+
+    table+="</table>";
+    document.write(table);
+</script>
+
+
