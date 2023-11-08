@@ -1,0 +1,20 @@
+<script>
+
+    // with spread operator
+
+    var car1 = ["Maruti Suzuki","Maruti Alto","Hundai Verna"];
+    var car2 = ["Kia Sonet","Kia seltos","Hundai Aura"];
+    
+    car3 = [...car1,...car2,"nano"];
+    document.write("<br>car3 : "+car3);
+
+    const [cardemo1,cardemo2,...cars] = car3;
+    document.write("<br>cardemo1 : "+cardemo1);
+    document.write("<br>cardemo2 : "+cardemo2);
+    document.write("<br>cars : "+cars);
+
+
+</script>
+
+
+

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function showData(){
+            var xhttp = new XMLHttpRequest();
+            var method = "GET";
+            var URL = "https://jsonplaceholder.typicode.com/users";
+            var async_status = true;
+            
+            xhttp.open(method,URL,async_status);
+            xhttp.send();
+            xhttp.onreadystatechange = function(){
+                if(xhttp.readyState==4 && xhttp.status==200){
+                    var arr = JSON.parse(xhttp.responseText);
+
+                    var table = "<table border='1' cellspacing='0' cellpadding='8'><tr></tr>";
+
+for(var index in arr){
+    table+="<tr>";
+    for(var key in arr[index]){
+        if(typeof arr[index][key]=="object"){
+            for(var subkey in arr[index][key]){
+               if(typeof arr[index][key][subkey]=="object"){
+                    for(var innerkey in arr[index][key][subkey]){
+                        if(typeof arr[index][key][subkey][innerkey]=="object"){}
+                        else
+                            table+=`<td>${arr[index][key][subkey][innerkey]}</td>`;
+                    }
+               }
+               else
+                    table+=`<td>${arr[index][key][subkey]}</td>`;
+            }
+        }
+        else
+            table+=`<td>${arr[index][key]}</td>`;
+    }
+    table+="</tr>";
+}
+
+table+="</table>";
+document.getElementById("show").innerHTML=table;
+
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="showData()">Click Here</button>
+    <p id="show"></p>
+</body>
+</html>
+
+<!-- 
+<script>
+    var obj1 = {
+        name : "Andrew Anderson",
+        salary : 10000,
+        age : 45,
+        address : {
+            state: "Madhya Pradesh",
+            city:{
+                street : "Vijaynagar",
+                pincode:452010,
+                appartment: "Signature Heights"
+            }
+        }
+    };
+    var obj2 = {
+        name : "Jackson Jack",
+        salary : 20000,
+        age : 35,
+        address : {
+            state:"Madhya Pradesh",
+            city:{
+                street : "Vijaynagar",
+                pincode:452010,
+                appartment: "Signature Heights"
+            }
+        }
+    };
+    var obj3 = {
+        name : "Jonny John",
+        salary : 20000,
+        age : 35,
+        address : {
+            state:"Madhya Pradesh",
+            city:{
+                street : "Vijaynagar",
+                pincode:452010,
+                appartment: "Signature Heights"
+            }
+        }
+    };
+
+    var arr = [obj1,obj2,obj3];
+    var table = "<table border='1' cellspacing='0' cellpadding='8'><tr><th>Name</th><th>Salary</th><th>Age</th><th>state</th><th>street</th><th>pincode</th><th>appartment</th></tr>";
+
+        for(var index in arr){
+            table+="<tr>";
+            for(var key in arr[index]){
+                if(typeof arr[index][key]=="object"){
+                    for(var subkey in arr[index][key]){
+                       if(typeof arr[index][key][subkey]=="object"){
+                            for(var innerkey in arr[index][key][subkey]){
+                                if(typeof arr[index][key][subkey][innerkey]=="object"){}
+                                else
+                                    table+=`<td>${arr[index][key][subkey][innerkey]}</td>`;
+                            }
+                       }
+                       else
+                            table+=`<td>${arr[index][key][subkey]}</td>`;
+                    }
+                }
+                else
+                    table+=`<td>${arr[index][key]}</td>`;
+            }
+            table+="</tr>";
+        }
+
+    table+="</table>";
+    document.write(table);
+</script>
+
+ -->

@@ -1,0 +1,16 @@
+<script>
+    var str = "This is an example of creating string an string literal";
+    document.write("<br>String : "+str.replace("example","EXAMPLE"));
+    document.write("<br>tHIS IS AN \"EXAMPLE\" OF STRING");
+    document.write("<br>String : "+str.slice(2,10));
+    document.write("<br>String : "+str.slice(-10,-2));
+    document.write("<br>String : "+str.substring(2,-10));
+    document.write("<br>String : "+str.substr(2,-10));
+  
+    var str_array = str.split(" ");
+    for(var word of str_array){
+        document.write("<br>word : "+word);
+    }
+
+
+</script>

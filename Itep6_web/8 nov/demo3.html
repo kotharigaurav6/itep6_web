@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque dolorum earum delectus obcaecati numquam asperiores quibusdam! Ad quasi culpa eius?</p>    
+
+    <p id="demo2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque dolorum earum delectus obcaecati numquam asperiores quibusdam! Ad quasi culpa eius?</p>    
+
+    <p class="demo3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque dolorum earum delectus obcaecati numquam asperiores quibusdam! Ad quasi culpa eius?</p>    
+
+    <p class="demo3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque dolorum earum delectus obcaecati numquam asperiores quibusdam! Ad quasi culpa eius?</p>    
+
+    <p class="demo3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque dolorum earum delectus obcaecati numquam asperiores quibusdam! Ad quasi culpa eius?</p>    
+
+    <script>
+       var element = document.querySelector("#demo2");
+        element.style.color="red";
+
+        var element1 = document.querySelectorAll(".demo3");
+        console.log(element1);
+        
+        element1[0].style.color="blue";
+
+        for(var index in element1){
+            element1[index].style.color="brown";
+        }
+</script>
+</body>
+</html>

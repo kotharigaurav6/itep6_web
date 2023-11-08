@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mystyle{
+            font-family: cursive;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.google.com" id="demo">Google1</a>
+    <a href="" id="demo1">Google2</a>
+<br>
+<script>
+        var element = document.getElementById("demo");
+        document.write(element.getAttribute("href"));
+
+        var element1 = document.getElementById("demo1");
+        element1.setAttribute("href","https://www.google.com");
+
+        element.classList.add("mystyle");
+        element.classList.remove("mystyle");
+        
+</script>
+</body>
+</html>
